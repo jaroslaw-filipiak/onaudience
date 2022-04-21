@@ -1,15 +1,15 @@
-@import "vendors/bootstrap/_bootstrap.min";
+@import 'vendors/bootstrap/_bootstrap.min';
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-@import "vendors/hamburgers/hamburgers";
+@import 'vendors/hamburgers/hamburgers';
 
-@import "utils/_mixins";
-@import "utils/_rwd";
+@import 'utils/mixins';
+@import 'utils/rwd';
 
-@import "utils/_variables";
-@import "base/_typography";
+@import 'utils/variables';
+@import 'base/typography';
+@import 'base/buttons';
 
-@import "utils/_debug";
-
+@import 'utils/debug';
 
 html {
   scroll-behavior: smooth;
@@ -25,17 +25,12 @@ html {
                                   supported by Chrome, Edge, Opera and Firefox */
 }
 
-
-html , body {
+html,
+body {
   width: 100%;
   overflow-x: hidden;
 
   p {
     font-size: 16px;
   }
-
 }
-
-
-
-
