@@ -12,4 +12,37 @@ h1 {
 .section-title {
   font-size: 38px;
   line-height: 43px;
+  position: relative;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+
+  &:after {
+    content: '';
+    width: 21px;
+    height: 2px;
+    display: block;
+    position: absolute;
+    left: 0%;
+    bottom: 0;
+    background-color: $blue;
+  }
+
+  &__sep-center {
+    &:after {
+      left: 50%;
+    }
+  }
+
+  &__sep-center--mobile {
+    &:after {
+      left: 50%;
+      @include lg {
+        left: 0%;
+      }
+    }
+  }
+}
+
+.p {
+  font-size: 16px;
 }

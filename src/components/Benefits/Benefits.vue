@@ -5,7 +5,9 @@
         <div class="container">
           <div class="row flex flex-column flex-lg-row">
             <div class="col col-lg-4">
-              <h3 class="section-title text-center text-lg-start">
+              <h3
+                class="section-title section-title__sep-center--mobile text-center text-lg-start"
+              >
                 Benefits of ID Resolution
               </h3>
             </div>
@@ -100,7 +102,7 @@ export default {};
 @import '@/assets/scss/utils/_mixins.scss';
 
 .benefits {
-  margin-bottom: 500px;
+  margin-bottom: 115px;
   margin-top: -115px;
 
   &-row-1 {
