@@ -1,3 +1,15 @@
 @mixin transition {
   transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
+
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin shadow {
+  -webkit-box-shadow: -5px 1px 8px -5px rgba(66, 68, 90, 0.26);
+  -moz-box-shadow: -5px 1px 8px -5px rgba(66, 68, 90, 0.26);
+  box-shadow: -5px 1px 8px -5px rgba(66, 68, 90, 0.26);
+}

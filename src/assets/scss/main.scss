@@ -11,6 +11,18 @@
 
 @import 'utils/debug';
 
+@include xl {
+  .container {
+    max-width: 1176px;
+  }
+}
+
+@include xxl {
+  .container {
+    max-width: 1176px;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
