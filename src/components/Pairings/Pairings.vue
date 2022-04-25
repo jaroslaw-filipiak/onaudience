@@ -6,7 +6,7 @@
       >
         <div class="col col-lg-6 pr-5">
           <h3
-            class="section-title section-title__sep-center--mobile text-center tet-lg-start"
+            class="section-title section-title__sep-center--mobile text-center text-lg-start"
           >
             Available user ID pairings
           </h3>
