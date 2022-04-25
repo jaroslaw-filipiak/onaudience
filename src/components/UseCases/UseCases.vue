@@ -91,7 +91,10 @@ export default {};
 
 .use-cases {
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 40px;
+  @include lg {
+    padding-bottom: 100px;
+  }
 
   &-row {
     position: relative;

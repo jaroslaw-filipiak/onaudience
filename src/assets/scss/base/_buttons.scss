@@ -11,4 +11,39 @@
     color: $txt-color;
     background-color: #fff;
   }
+
+  &__dark {
+    background-color: #000;
+    color: #fff;
+  }
+}
+
+.btn-login {
+  background-color: #fff;
+  padding: 12px 22px;
+  font-size: 16px;
+  text-decoration: none;
+  color: $txt-color;
+  border: 1px solid $blue;
+  @include transition;
+
+  &:hover {
+    color: $txt-color;
+    background-color: #fff;
+  }
+}
+
+.btn-demo-request {
+  background-color: #fff;
+  padding: 12px 22px;
+  font-size: 16px;
+  text-decoration: none;
+  color: $txt-color;
+  border: 1px solid $yellow;
+  @include transition;
+
+  &:hover {
+    color: $txt-color;
+    background-color: #fff;
+  }
 }

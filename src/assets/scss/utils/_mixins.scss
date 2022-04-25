@@ -9,7 +9,7 @@
 }
 
 @mixin shadow {
-  -webkit-box-shadow: -5px 1px 8px -5px rgba(66, 68, 90, 0.26);
-  -moz-box-shadow: -5px 1px 8px -5px rgba(66, 68, 90, 0.26);
-  box-shadow: -5px 1px 8px -5px rgba(66, 68, 90, 0.26);
+  -webkit-box-shadow: 0px 1px 8px 1px rgb(66 68 90 / 26%);
+  -moz-box-shadow: 0px 1px 8px 1px rgb(66 68 90 / 26%);
+  box-shadow: 0px 1px 8px 1px rgb(66 68 90 / 26%);
 }
