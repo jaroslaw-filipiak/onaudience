@@ -41,19 +41,28 @@
           <div class="row d-flex flex-column flex-lg-row">
             <div class="col col-lg-2">
               <ul class="benefits-filters">
-                <li>Advertisers</li>
-                <li class="benefits-item-active">Marketers</li>
-                <li>Publishers</li>
+                <li data-filter="all">All</li>
+                <li data-filter="1">Advertisers</li>
+                <li data-filter="2" class="benefits-item-active">Marketers</li>
+                <li data-filter="3">Publishers</li>
               </ul>
             </div>
             <div class="col">
-              <div class="benefits-icons">
-                <div class="benefit-icon">
+              <div class="benefits-icons filter-container">
+                <div
+                  class="benefit-icon filtr-item"
+                  data-category="1"
+                  data-sort="value"
+                >
                   <img src="@/assets/img/bi-1.png" alt="" />
                   <h3>Deliver more relevant ads across different devices</h3>
                 </div>
 
-                <div class="benefit-icon">
+                <div
+                  class="benefit-icon filtr-item"
+                  data-category="1"
+                  data-sort="value"
+                >
                   <img src="@/assets/img/bi-2.png" alt="" />
                   <h3>
                     Better understand your customers and how they interact with
@@ -61,22 +70,38 @@
                   </h3>
                 </div>
 
-                <div class="benefit-icon">
+                <div
+                  class="benefit-icon filtr-item"
+                  data-category="2"
+                  data-sort="value"
+                >
                   <img src="@/assets/img/bi-3.png" alt="" />
                   <h3>Increased clarity to your ad targeting</h3>
                 </div>
 
-                <div class="benefit-icon">
+                <div
+                  class="benefit-icon filtr-item"
+                  data-category="2"
+                  data-sort="value"
+                >
                   <img src="@/assets/img/bi-4.png" alt="" />
                   <h3>Reduce ad waste by targeting users more effectively</h3>
                 </div>
 
-                <div class="benefit-icon">
+                <div
+                  class="benefit-icon filtr-item"
+                  data-category="3"
+                  data-sort="value"
+                >
                   <img src="@/assets/img/bi-5.png" alt="" />
                   <h3>Move towards cookieless tracking and targeting</h3>
                 </div>
 
-                <div class="benefit-icon">
+                <div
+                  class="benefit-icon filtr-item"
+                  data-category="3"
+                  data-sort="value"
+                >
                   <img src="@/assets/img/bi-6.png" alt="" />
                   <h3>
                     Increase advertising reach by targeting additional devices
@@ -93,7 +118,24 @@
 </template>
 
 <script>
-export default {};
+import Filterizr from 'filterizr';
+
+export default {
+  mounted() {
+    const options = {
+      animationDuration: 0.2,
+      filterOutCss: {
+        transform: 'scale(0.5)',
+      },
+      filterInCss: {
+        transform: 'scale(1)',
+      },
+      layout: 'packed',
+      gutterPixels: 15, // Items spacing in pixels
+    };
+    const filterizr = new Filterizr('.filter-container', options);
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -115,10 +157,10 @@ export default {};
   }
 
   &-icons {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    // display: flex;
+    // flex-wrap: wrap;
+    // align-items: center;
+    // justify-content: center;
     gap: 24px;
 
     .benefit-icon {
